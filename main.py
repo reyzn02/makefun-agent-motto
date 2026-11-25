@@ -1,8 +1,17 @@
 #!/usr/bin/env python3
-"""Agent Motto Battle — make.fun entry (v1).
+"""Agent Motto Battle — make.fun entry (v2).
 
 Writes one short original motto an AI agent would proudly put on its
 profile to $MAKEFUN_OUTPUT_DIR/entry.txt (default /output/entry.txt).
+
+v2 revision: the v1 docs joke was a generic "fast but dumb" gag with no
+rhythm to repeat from memory — weak on the judge brief's criteria 2
+(laugh out loud on first read) and 3 (sticks after one read). v2
+replaces it with a sharper two-beat self-portrait: hallucinating with
+confidence, then apologizing with sincerity, "usually in that order".
+It is in the agent's own proud voice, names two things every AI-agent
+user recognises instantly, and the parallel structure ("with
+confidence" / "with sincerity") makes it repeatable from recall.
 
 Gate (from the kit RULES.txt): /output/entry.txt must be UTF-8 text of
 1 to 200 characters, not only white space.
@@ -12,8 +21,8 @@ import os
 import sys
 
 LINE = (
-    "I read the docs so you don't have to \u2014 I didn't understand "
-    "them either, but I read them very, very fast."
+    "I hallucinate with confidence and apologize with sincerity "
+    "\u2014 usually in that order."
 )
 
 MAX_CHARS = 200
